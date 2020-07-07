@@ -2,6 +2,8 @@ syntax = "proto3";
 
 import "date.proto";
 
+package person;
+
 // person is used for users in our application
 
 message Person {
@@ -29,7 +31,7 @@ message Person {
 
     EyeColor eye_color = 8;
 
-    Date birthday = 9;
+    my.date.Date birthday = 9;
 
     message Address {
         string address_line_1 = 1;
