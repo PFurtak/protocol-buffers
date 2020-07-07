@@ -24,5 +24,14 @@ message Person {
         EYE_BROWN = 2;
         EYE_BLUE = 3;
     }
+    
     EyeColor eye_color = 8;
+
+    Date birthday = 9;
+}
+
+message Date {
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
 }
